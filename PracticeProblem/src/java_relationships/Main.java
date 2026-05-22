@@ -90,7 +90,7 @@ class CourseOffering {
     }
 
     void display() {
-        System.out.println("\n===== Course Offering =====");
+        System.out.println("\n Course Offering");
 
         student.display();
         System.out.println();
@@ -111,11 +111,11 @@ class CourseOffering {
 public class Main {
     public static void main(String[] args) {
 
-        Student s1 = new Student(1, "Soniya", "CSE");
+        Student s1 = new Student(1, "Soniya", "SWE");
 
-        Instructor i1 = new Instructor(101, "Dr. Hasan", "CSE", "Professor");
+        Instructor i1 = new Instructor(101, "Rakib Sir", "CSE", "Lecturer");
 
-        Course c1 = new Course(201, "Database Basics", "DBMS", 3, "None");
+        Course c1 = new Course(201, "Java Basics", "DBMS", 3, "None");
 
         CourseOffering co1 = new CourseOffering(
                 s1,
