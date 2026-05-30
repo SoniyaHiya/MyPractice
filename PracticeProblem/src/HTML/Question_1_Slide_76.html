@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Top-Level Class in Java</title>
+</head>
+<body>
+       <h4>Question_1</h4>
+     
+       <h4>Top-Level Class in Java</h4>
+
+    <p>
+        A top-level class in Java is a class that is declared directly inside a .java file
+        and is not nested inside another class.
+    </p>
+
+    <p>
+        A top-level class cannot be declared as <code>private</code> because the <code>private</code>
+        modifier is only meaningful for members inside a class. It restricts access to the enclosing class.
+        But a top-level class has no enclosing class, so <code>private</code> has no meaning here.
+    </p>
+
+    <p>
+        Therefore, Java only allows top-level classes to be either <b>public</b> or <b>package-private</b>
+        (default access).
+    </p>
+
+    <h3>Example</h3>
+
+    <pre>
+private class MyClass {
+}
+    </pre>
+
+    <h3>Error</h3>
+
+    <pre>
+error: modifier private not allowed here
+    </pre>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Initializer Blocks and Constructors in Java</title>
+</head>
+       <h4>Question_3</h4>
+<body>
+
+    <p>
+        Initializer blocks are blocks of code used to initialize objects or classes in Java.
+        There are two types of initializer blocks: static initializer blocks and instance
+        initializer blocks. A static initializer block is executed only once when the class
+        is loaded into memory, whereas an instance initializer block is executed every time
+        an object of the class is created.
+    </p>
+
+    <p>
+        Constructors are special methods used to initialize objects when they are created.
+        The main difference is that an instance initializer block executes before the
+        constructor, while a static initializer block executes before any object is created
+        and only once during class loading.
+    </p>
+
+    <h3>Order of Execution</h3>
+
+    <pre>
+1. Static Initializer Block
+2. Instance Initializer Block
+3. Constructor
+    </pre>
+
+    <h3>Example</h3>
+
+    <pre>
+class Example {
+
+    static {
+        System.out.println("Static Initializer Block");
+    }
+
+    {
+        System.out.println("Instance Initializer Block");
+    }
+
+    Example() {
+        System.out.println("Constructor");
+    }
+}
+    </pre>
+
+</body>
+</html>

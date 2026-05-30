@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instance Variable Assignment in Java</title>
+</head>
+<body>
+        <h4>Question_2</h4>
+
+    <p>
+        An instance variable cannot be assigned a new value directly outside a method,
+        constructor, or initializer block because Java only allows declarations of variables,
+        methods, constructors, and initializer blocks in the class body. An assignment
+        statement such as <code>lang = "Python";</code> is an executable statement, and
+        executable statements must be placed inside a method, constructor, or initializer block.
+        Therefore, writing an assignment directly in the class body results in a compile-time
+        error because the compiler does not recognize it as a valid class member.
+    </p>
+
+    <h3>Example</h3>
+
+    <pre>
+class Example {
+    String lang;
+
+    lang = "Python";   // Compile-time error
+}
+    </pre>
+
+</body>
+</html>

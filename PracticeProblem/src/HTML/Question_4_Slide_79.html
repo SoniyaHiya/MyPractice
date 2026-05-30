@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order of Execution in Java</title>
+</head>
+          <h4>Question_4</h4>
+<body>
+
+    <p>
+        In Java, the order of execution is:
+    </p>
+
+    <ol>
+        <li>Static Initializer Block</li>
+        <li>Instance Initializer Block</li>
+        <li>Constructor</li>
+    </ol>
+
+    <p>
+        The static initializer block is executed only once when the class is loaded into memory.
+        The instance initializer block is executed every time an object is created, just before
+        the constructor. Finally, the constructor is executed to initialize the object.
+    </p>
+
+    <h3>Example</h3>
+
+    <pre>
+class Example {
+
+    static {
+        System.out.println("Static Initializer Block");
+    }
+
+    {
+        System.out.println("Instance Initializer Block");
+    }
+
+    Example() {
+        System.out.println("Constructor");
+    }
+
+    public static void main(String[] args) {
+        Example obj = new Example();
+    }
+}
+    </pre>
+
+</body>
+</html>
